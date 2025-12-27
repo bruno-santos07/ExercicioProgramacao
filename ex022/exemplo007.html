@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo Position CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      height: 2000px;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* RELATIVE + ABSOLUTE */
+    .pai {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background: #ddd;
+      margin-bottom: 50px;
+    }
+
+    .filho {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: red;
+      color: white;
+      padding: 5px;
+    }
+
+    /* FIXED */
+    .fixed {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: blue;
+      color: white;
+      padding: 10px;
+    }
+
+    /* STICKY */
+    .sticky {
+      position: sticky;
+      top: 0;
+      background: green;
+      color: white;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sticky">
+    Eu sou sticky (rola a página 👇)
+  </div>
+
+  <div class="pai">
+    Pai (relative)
+    <div class="filho">
+      Filho (absolute)
+    </div>
+  </div>
+
+  <p>Role a página para ver o efeito do <strong>fixed</strong> e do <strong>sticky</strong>.</p>
+
+  <div class="fixed">
+    Eu sou fixed
+  </div>
+
+</body>
+</html>
