@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #fiel{
+            background-color: red;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário Email</h1>
+    <fieldset id="fiel">
+        <legend>Dados Pessoais</legend>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" placeholder="Digite email valido" required autocomplete="email">
+            </p>
+            <!-- Estudar mais sobre RegEx -->
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel"  placeholder="Digite seu contato">
+            </p>
+            <p>
+              <input type="submit" value="Enviar" name="email" id="iemail">
+              <input type="reset" value="Limpar" name="email" id="iemail">
+            </p>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
